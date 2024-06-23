@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    width: 51%;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.left {
+    width: 45%;
+    padding: 4px;
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #50C878;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.left .up {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.logo i {
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.message,
+.signin {
+    font-size: 14.5px;
+    color: black;
+}
+
+.signin a:hover {
+    text-decoration: underline rgb(65, 225, 73);
+}
+
+.signin a {
+    color: #319a54;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    background-color: #eee;
+    color: black;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.397);
+}
+
+.form label .input+span {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 25px;
+    font-size: 1em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    color: rgba(0, 0, 0, 0.596);
+    top: 0px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.input {
+    font-size: medium;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #50C878;
+}
+
+.submit:hover {
+    background-color: #499963;
+}
+
+
+/* message box */
+
+.message {
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap: 1.5rem;
+}
+
+.message span {
+    font-size: 2rem;
+    color: black;
+}
+
+.message i {
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 2.5rem;
+}
+
+.message i:hover {
+    transform: rotate(90deg);
+}
